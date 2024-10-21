@@ -2,7 +2,7 @@
 using namespace std;
 void ReverseArray(int arr[], int n, int i){
     if(i>=n/2) return;
-    swap(arr[i], arr[n-1]);
+    swap(arr[i], arr[n-i-1]);
     ReverseArray(arr,n,i++);
 
 }
